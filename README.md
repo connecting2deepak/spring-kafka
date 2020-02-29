@@ -19,6 +19,10 @@ As Kafka topics are not created automatically by default, this application requi
 
 When the application runs successfully, following output is logged on to console (along with spring logs):
 
+### Read All Messages from the TOPIC
+
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
+
 #### Message received from the 'baeldung' topic by the basic listeners with groups foo and bar
 >Received Message in group 'foo': Hello, World!<br>
 Received Message in group 'bar': Hello, World!
